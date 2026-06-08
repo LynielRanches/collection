@@ -33,7 +33,14 @@ public class Main {
             System.out.println(animals.get(i).name);
         }
         for(Animal animal : animals) {
-            
+            System.out.println(animal.name);
+        }
+
+         Map<String, Integer> scores = new HashMap();
+        scores.put("Chico", 98);
+        scores.put("Andrick", 100);
+        for(Map.Entry<String, Integer> score : scores.entrySet()) {
+            System.out.println(score.getKey() + ":" + score.getValue());
         }
     }
 
