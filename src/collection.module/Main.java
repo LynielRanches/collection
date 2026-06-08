@@ -49,7 +49,7 @@ public class Main {
 
         var myname = new Box<String>();
         var myage = new Box<Integer>();
-        myname.set("Rabino");
+        myname.set("Ranches");
         myage.set(18);
         System.out.println(myname.get());
         System.out.println(myage.get());
