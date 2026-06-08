@@ -42,6 +42,24 @@ public class Main {
         for(Map.Entry<String, Integer> score : scores.entrySet()) {
             System.out.println(score.getKey() + ":" + score.getValue());
         }
+
+        Box<String> myname = new Box<String>();
+        Box<Integer> myage = new Box<Integer>();
+        myname.set("Ran");
+        myage.set(18);
+        System.out.println(myname.get());
+        System.out.println(myage.get());
+    }
+
+    static class Box<T> {
+
+        private T value;
+        public void set(T value) {
+            this.value = value;
+        }
+        public T get() {
+            return value;
+        }
     }
 
     class Animal {
